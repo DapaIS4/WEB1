@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(244,255,230);
+    background: linear-gradient(90deg, rgba(244,255,230,1) 0%, rgba(253,219,30,1) 37%, rgba(253,220,29,1) 65%, rgba(252,176,69,1) 100%);
+}
+
+nav ul{
+    list-style: none;
+    margin:0 15px;
+    padding: 0;
+    text-align: left;
+}
+nav{
+    background: rgb(59,34,182);
+    background: linear-gradient(90deg, rgba(59,34,182,1) 0%, rgba(253,219,30,1) 37%, rgba(186,29,253,1) 70%, rgba(252,176,69,1) 100%);
+    padding: 10px 0;
+}
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white; /* Warna teks tautan */
+    font-weight: bold; /* Ketebalan teks tautan */
+}
+nav a:hover {
+    color: #25e7bd; /* Warna teks saat hover */
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  img{
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+.p1{
+    padding: -20px;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+  
+
+
+
+
+
