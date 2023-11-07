@@ -28,16 +28,36 @@
         }
         x = 3;
         let y = 4;
-        let z =10;
+        let z = 2;
 
         function hehe(x, y){ // no matter what you put in colum tehe value still go let.
             return x + y + z;
         }
 
-        document.write(hehe(x,y,z));
+        function substract(a, b){
+            return a - b;
+        }
 
+        document.write("<br>")
+        document.write(hehe(x,y,z));
+        document.write("<br>" + substract(y, z));
         // myDapa();
 
     </script>
+    <br><br>
+    Name: <input id="name" type="text"><button onclick="display()">
+        Send!
+    </button>
+
+    <Script>
+        function display(){
+        let name = document.getElementById("name").value;
+           // alert(name);
+            //document.write(name);
+            document.getElementById("ds").innerHTML = name;
+        }
+    </Script>
+
+    <h2 id="ds"></h2>
 </body>
 </html>
