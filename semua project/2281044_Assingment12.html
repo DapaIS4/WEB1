@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h1>Kalkulator Dapa</h1>
+    <form id="calculator">
+        <input type="text" id="a">
+        <select id="penghitung">
+            <option value="+">Tambah(+)</option>
+            <option value="-">Kurang(-)</option>
+            <option value="*">Kali(x)</option>
+            <option value="/">Bagi(/)</option>
+        </select>
+        <input type="text" id="b">
+        <button type="button" onclick="hitung()">Hitung</button>
+    </form>
+    <p>Hasil: <span id="hasil"></span></p>
+
+    <script>
+        function hitung() {
+            // + untuk mengonversi string ke number
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let penghitung = document.getElementById("penghitung").value;
+            let hasil;
+
+            switch (penghitung) {
+                case "+":
+                    hasil = a + b;
+                    break;
+                case "-":
+                    hasil = a - b;
+                    break;
+                case "*":
+                    hasil = a * b;
+                    break;
+                case "/":
+                    if (b === 0) {
+                        hasil = "ERROR";
+                    } else {
+                        hasil = a / b;
+                    }
+                    break;
+                default:
+                    hasil = "Pilih operator yang valid";
+            }
+            document.getElementById("hasil").textContent = hasil;
+        }
+    </script>
+    
+</body>
+</html>

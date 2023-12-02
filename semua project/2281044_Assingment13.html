@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment13</title>
+</head>
+<body>
+    <div style="border: 2px solid red; text-align: center;">
+    <h3>Mouseover:</h3>
+    <h1 onmouseover="Rubahwarna(this)" id="a">HOLLA.</h1>
+    
+    <script>
+        function Rubahwarna(element) {
+            element.style.backgroundColor = 'blue';
+            document.getElementById("a").innerHTML = "namaku dapa";
+            
+        }
+        </script>
+    </div>
+
+        <div style="border: 2px solid blue; text-align: center;">
+        <h3>KeyDown:</h3>
+        <input type="text" onkeydown="pass()">
+        <p id="kode"></p>
+    <script>
+        function pass() {
+    
+                document.getElementById("kode").innerHTML = "9866";
+            }
+     </script>
+    </div>
+
+    <div style="border: 2px solid green; text-align: center;">
+        <h3>Keyup:</h3>
+        <input type="text" onkeyup="key()">
+        <p id="output"></p>
+    
+        <script>
+            function key() {
+                document.getElementById("output").innerText = "Key released";
+            }
+        </script>
+        <div style="border: 2px solid yellow; text-align: center;">
+            <h3>button
+            </h3>
+            <Button onclick="muncul()">kLIK DISINI</Button>
+            <p><span id="selamat"></span></p>
+        <script>
+            function muncul(){
+                document.getElementById("selamat").innerHTML = "Selamat Kamu berhasil membuat akun";
+            }
+        </script>
+        </div>
+    </div>
+
+    <div style="border: 2px solid green; display: flex; flex-direction: column;">
+        <form id="dataDiriForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+    
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" name="umur" required>
+    
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+    
+            <button type="button" onclick="submitForm()">Kirim Data</button>
+        </form>
+    
+        <script>
+            function submitForm() {
+                // Mengumpulkan data dari formulir
+                var nama = document.getElementById('nama').value;
+                var umur = document.getElementById('umur').value;
+                var alamat = document.getElementById('alamat').value;
+    
+                // Menampilkan data di konsol (Anda dapat mengirim data ke server di sini)
+                console.log('Nama:', nama);
+                console.log('Umur:', umur);
+                console.log('Alamat:', alamat);
+            }
+        </script>
+    
+    </div>
+    
+     
+</body>
+</html>
